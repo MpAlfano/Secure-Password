@@ -107,6 +107,11 @@ var writeSpecial = function() {
   } 
 } 
 
+var keyListAlpha = "abcdefghijklmnopqrstuvwxyz";
+var keyListAlphaU = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var keyListNum = "1234567890";
+var keyListSpec = "'!@#$%^&*()_+~`|}{[]\:;?><,./-='";
+
 
 
 var createPassword = function() {
@@ -117,13 +122,47 @@ var createPassword = function() {
   console.log(generateNumber);
   console.log(generateSpecial);
 
-  var keyListAlpha = "abcdefghijklmnopqrstuvwxyz",
-      keyListAlphaU = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-      keyListNum = "1234567890",
-      keyListSpec = "'!@#$%^&*()_+~`|}{[]\:;?><,./-='",
-      password1 = '';
-  
-  var len = Math.ceil(generateSize/2);
+  var createLogic = generateLower + generateUpper + generateNumber + generateSpecial;
+
+  console.log(createLogic)
+
+  if (createLogic = "YYYY"){
+    createPassword1 
+  } else if (createLogic = "YNYY") {
+    createPassword2
+  } else if (createLogic = "YYNY") {
+    createPassword3
+  } else if (createLogic = "YYYN") {
+    createPassword4
+  } else if (createLogic = "NYYY") {
+    createPassword5
+  } else if (createLogic = "NYYN") {
+    createPassword6
+  } else if (createLogic = "YNNY") {
+    createPassword7
+  } else if (createLogic = "YNYN") {
+    createPassword8
+  } else if (createLogic = "NNYY") {
+    createPassword9
+  } else if (createLogic = "NYNY") {
+    createPassword10
+  } else if (createLogic = "YYNN") {
+    createPassword11
+  } else if (createLogic = "YNNN") {
+    createPassword12
+  } else if (createLogic = "NYNN") {
+    createPassword13
+  } else if (createLogic = "NNYN") {
+    createPassword14
+  } else if (createLogic = "NNNY") {
+    createPassword15
+  } else if (createLogic = "NNNN") {
+    createPassword16
+  }
+
+
+
+  /*var len = Math.ceil(generateSize/2);
   len = len - 1;
   var lenSpec = generateSize-2*len;
 
@@ -140,8 +179,10 @@ var createPassword = function() {
     
     console.log(password1)
     console.log(password1.length)
-    return password1;
+    return password1;*/
 }
+
+
 
 // Write password to the #password input
 function writePassword() {
