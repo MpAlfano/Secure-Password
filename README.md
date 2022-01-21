@@ -9,6 +9,6 @@ numbers, letters being lowercase or uppercase and special characters.
 
 This is an image preview of the webpage.
 
-![My Portfolio Page](./assets/images.demo.png)
+![Password Page](./assets/images/demo.png)
 
 [View Website Here](https://mpalfano.github.io/Secure-Password/)
